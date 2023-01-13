@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
 
+## UI
+
+![alt text](https://github.com/harsh-kumar-suman/TodoApp/blob/master/UI.png?raw=true)
+
+## Funtionalities
+1.Add a new Todo Item
+2.Delete an existing Todo Item
+3.Mark Todo items as done
+4.Add details/description for Todo Item.
+5.Edit existing Todo Items
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
