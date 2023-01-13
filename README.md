@@ -7,11 +7,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ![alt text](https://github.com/harsh-kumar-suman/TodoApp/blob/master/UI.png?raw=true)
 
 ## Funtionalities
-1.Add a new Todo Item
-2.Delete an existing Todo Item
-3.Mark Todo items as done
-4.Add details/description for Todo Item.
-5.Edit existing Todo Items
+* Add a new Todo Item
+* Delete an existing Todo Item
+* Mark Todo items as done
+* Add details/description for Todo Item.
+* Edit existing Todo Items
 
 
 ## Development server
