@@ -1,0 +1,60 @@
+<div class="d-flex align-items-center " *ngIf="!isedit else editpanel">
+    <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." [checked]="todoele.completed" [(ngModel)]="todoele.completed" (click)="onCheckbox()"/>
+    
+    {{todoele.title}}  
+
+    <div *ngIf="!isdesc else descpanel" class="ms-3 me-3">
+        <button style="background-color: transparent; border:0" (click)="onClickDesc()"><i class="bi bi-caret-down"></i></button>
+    </div>
+    <ng-template #descpanel class="ms-3 me-3">
+        <button style="background-color: transparent; border:0" (click)="onClickDesc()"><i class="bi bi-caret-right"></i></button>
+            Description : {{todoele.desc}}
+    </ng-template>
+    <button style="background-color: transparent;border : 0;" (click)="onEdit()"><i class="bi bi-pencil"></i></button>
+    
+    <button style="background-color: transparent;border : 0" (click)="onDelete()"><i class="bi bi-trash" style="color:red; text-align: right;"></i></button>
+
+</div>
+
+
+
+<ng-template #editpanel >
+    <div class="d-flex align-items-center" >
+        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." [checked]="todoele.completed" [(ngModel)]="todoele.completed" (click)="onCheckbox()"/>
+        
+        <input type="text" [(ngModel)]="todoele.title">
+
+        <div *ngIf="!isdesc else descpanel" class="ms-3 me-3">
+            <button style="background-color: transparent; border:0" (click)="onClickDesc()"><i class="bi bi-caret-down"></i></button>
+        </div>
+        <ng-template #descpanel class="ms-3 me-3">
+            <button style="background-color: transparent; border:0" (click)="onClickDesc()"><i class="bi bi-caret-right"></i></button>
+            <input type="text" [(ngModel)]="todoele.desc">
+        </ng-template>
+
+        <button style="background-color: green;border : 0;" (click)="onSubmitEdit()" class="ms-1 me-1"><i class="bi bi-send"></i></button>
+
+        <button style="background-color: transparent;border : 0;" (click)="onEdit()"><i class="bi bi-pencil"></i></button>
+        
+        <button style="background-color: transparent;border : 0" (click)="onDelete()"><i class="bi bi-trash" style="color:red; text-align: right;"></i></button>
+    
+    </div>
+</ng-template>
+
+<!-- <li
+    class="list-group-item d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
+    <div class="d-flex align-items-center">
+    <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+    Cras justo odio
+    </div>
+    <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
+    <i class="bi bi-trash"></i>
+    </a>
+</li> -->
+
+
+
+
+
+
+

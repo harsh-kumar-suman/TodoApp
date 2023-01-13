@@ -1,0 +1,11 @@
+<form class="form" #addForm="ngForm" (ngSubmit)="onSubmit(addForm.form.valid)" class="d-flex justify-content-center align-items-center " name="add-form">
+  <div class="form-outline flex-fill">
+      <input type="text" class="form-control form-control-lg m-1" placeholder="What do you need to do today?" [(ngModel)]="title" name="title" required />
+      <input type="text" class="form-control form-control-lg m-1" placeholder="Any description about the job?" [(ngModel)]="desc" name="desc" />
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg ms-2">Add</button>
+</form>
+<!-- <div  *ngIf="addForm.form.invalid && addForm.submitted ">*Please enter a title to add new task</div>   -->
+
+
+
